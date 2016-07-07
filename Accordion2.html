@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Accordion2</title>
+
+<!--
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/cupertino/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="resources/demos/style.css" />
+-->
+
+<link rel="stylesheet" href="CustomTheme/jquery-ui-1.11.4.custom/jquery-ui.min.css" />
+	<script src="CustomTheme/jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+	<script src="CustomTheme/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="CSS.css"/>
+
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+</head>
+
+
+<body>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      	<span class="close">×</span>
+      	<h2>Brugertest</h2>
+    </div>
+    <div class="modal-body">
+    	<nav>
+    	<img id="imageBig" src="Images/Usability1.jpg"  /><br />
+        	<div class="imagePreviews">
+        		<img src="Images/Usability1.jpg" border="1" onclick="usability1()" />
+            	<img src="Images/Usability2.png" border="1" onclick="usability2()" />
+            	<img src="Images/Usability3.png" border="1" onclick="usability3()" />
+        	</div>
+        </nav>
+        
+        <section>
+        <p>Usability test er en teknik, der anvendes i brugercentreret interaktionsdesign til at vurdere et produkt ved at teste den på brugerne. Dette kan ses som en uerstattelig anvendelses praksis, da det giver direkte input til, hvordan virkelige brugere anvender systemet. Dette er en modsætning til usability inspektionsmetoder hvor eksperter anvender forskellige metoder til at evaluere en brugergrænseflade uden at involvere brugere.
+        </p>
+		<p>
+Usability test fokuserer på at måle et produkts evne til at opfylde det tilsigtede formål. Eksempler på produkter, der almindeligvis nyder godt af usability tests er fødevarer, forbrugerprodukter, hjemmesider eller webapplikationer, computer-grænseflader, dokumenter og enheder. Usability tests måler anvendelses-, eller bruger-venligheden, af et bestemt objekt eller et sæt af objekter, mens almindelig human-computer interaktionsstudier forsøger at formulere universelle principper.
+		</p>
+        <ul>
+        	Eksempler på metoder vi anvender under brugertests:
+  			<li>Målgruppe beskrivelse</li>
+  			<li>Usecase beskrivelse</li>
+  			<li>Kort sortering</li>
+            <li>A/B Testing</li>
+            <li>Spørgeskemaer (kvantitativ og kvalitativ data)</li>
+            <li>Brugerinterviews (kvalitativ dataindsamling)</li>
+            <li>5-sekunders testing</li>
+            <li>Remote Usability Testing</li>
+		</ul>  
+		</section>
+        <aside>
+        	<div class="contact_info">
+            	<h5 class="contact_header">Kontakt</h5>
+                	<div class="contact_person" style="text-align:left;">
+                    	<div class="contact_person_container">
+                        	<div class="contact-thumbnail">
+                            	<img src="Images/camilla.png" style="width:150px; height:130px;"></img>
+                    		</div>
+                            <div class="contact-name">Camilla Dahl Hansen</div>
+                            <div class="contact-info">
+                            	<i class="fa fa-envelope" aria-hidden="true"></i>
+                                	<span class="codedirection">
+                                    	<span class="miraclemail">
+                                        	<a class="correctDirection"
+                                            href="mailto:cdh@miracle.dk">cdh@miracle.dk
+                                            </a>
+                                        </span>
+                                    </span>
+                                    </br />
+                                <i class="fa fa-mobile-phone"></i>
+                                <span>
+                                <a href="tel:+45 61 68 04 34">+45 61 68 04 34
+                                </a>
+                                </span>
+                            </div>
+                        </div>    
+                    </div>    
+            </div>  
+            
+            
+<!-- Her starter eksempler -->
+			<div class="ref-overall">
+            	<div class="ref-container">
+                	<h5>
+                    	<strong>Eksempler</strong>
+                    </h5>
+                    <div>
+                    	<img src="Images/Vestas.png" />
+                    </div>
+                    <div>
+                    	<img src="Images/Hummel.png" />   				
+                    </div>
+                    <div>
+                    	<img src="Images/Fakta.png" />
+                    </div>
+                    <div>
+                    	<img src="Images/Bolia.png" />
+                    </div>
+            	</div>
+            </div>         
+<!--                    
+        		<img src="Images/camilla.png" style="width:200px; height:200px;"/><br />
+        		<p class="kontakt_navn"><b>Camilla Dahl Hansen</b></p>
+        		<img src="Images/Email.png" style="width:10px;" style="height:10px;" style="display:inline;"/> &nbsp; <p style="display:inline;">cdh@miracle.dk</p><br />
+        		<img src="Images/Phone.png" style="width:10px;" style="height:10px;" style="display:inline;"/> &nbsp; <p style="display:inline;">+45 61 68 04 34</p>
+                			
+                		</div>
+                	</div>
+            	</div>
+        	</div>
+        	<div class="eksempel_info">
+        		<div class="floatleft">
+        			<p><b>Eksempler</b></p><br />
+            			<div id="eksempel_billeder">
+            				<img src="Images/Vestas.png" style="width:115px; height:33px;"/><br />
+                    		<img src="Images/Hummel.png" style="width:97px; height:80px;"/><br />
+                    		<img src="Images/Fakta.png" style="width:115px; height:35px;"/><br />
+                    		<img src="Images/Bolia.png" style="width:115px; height:35px;"/><br />
+            			</div> -->
+
+        </aside>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-overall">
+    <div class="container">
+        <img id="loopIde" src="Images/LoopSelected.png" onclick="ide_select()" onMouseOver="ide_over()" onMouseOut="ide_out()"/>
+        <h3 class="h_text">Idé</h3>
+        <div class="accordion" id="ide">
+        <h2>Workshop</h2>
+        <div>This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here</div>
+        
+        <h2>Kravs- og behovsanalyse</h2>
+        <div>Kravspecifikation eller problemanalyse i datalogi, er et ord der bruges til at beskrive alle opgaver der indgår i undersøgelse, afgrænsning og definition af et nyt eller ændret computersystem.
+    </div>
+        
+        <h2>Initierende Skitsering</h2>
+        <div>En skitse (skizze) (af italiensk schizzo, fransk esquisse, engelsk sketch) er et flygtigt udkast til et kunstværk, et maleri, billedhuggerarbejde (en tegning, en lille plastisk model) og lignende.</div>
+        
+        <h2>Roadmap</h2>
+        <div><img src="Images/RoadMap.png" style="width:100%;" /><br/>
+        A technology roadmap is a plan that matches short-term and long-term goals with specific technology solutions to help meet those goals. It is a plan that applies to a new product or process, or to an emerging technology.</div>
+        
+        <h2>Rammer</h2>
+        <div>This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here</div>
+        
+        <h2>Forretningsmodel</h2>
+        <div>This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here</div>
+        
+        <h2>Workflow</h2>
+        <div>A workflow consists of an orchestrated and repeatable pattern of business activity enabled by the systematic organization of resources into processes that transform materials, provide services, or process information.</div>
+        
+        <h2>Design</h2>
+        <div>This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <img id="loopKoncept" src="Images/LoopSelected.png" onclick="koncept_select()" onMouseOver="koncept_over()" onMouseOut="koncept_out()" />
+        <h3 class="h_text">Koncept</h3>
+        <div class="accordion" id="koncept">
+        <h2>Detaljeret Featureliste</h2>
+        <div>Feature-driven development (FDD) is an iterative and incremental software development process. It is one of a number of lightweight or Agile methods for developing software.</div>
+        
+        <h2>Scope</h2>
+        <div>This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here</div>
+        
+        <h2>Systemarkitektur</h2>
+        <div>A system architecture or systems architecture is the conceptual model that defines the structure, behavior, and more views of a system.
+    </div>
+        
+        <h2>Minimal Viable Product</h2>
+        <div>This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here</div>
+        
+        <h2>Design</h2>
+        <div>This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <img id="loopUdvikling" src="Images/LoopSelected.png" onclick="udvikling_select()" onMouseOver="udvikling_over()" onMouseOut="udvikling_out()" />
+        <h3 class="h_text">Udvikling</h3>
+        <div class="accordion" id="udvikling">
+        <h2>Implementering</h2>
+        <div>A product software implementation method is a systematically structured approach to effectively integrate a software based service or component into the workflow of an organizational structure or an individual end-user.</div>
+        
+        <h2>Systemintegration</h2>
+        <div>In engineering, system integration is defined as the process of bringing together the component subsystems into one system and ensuring that the subsystems function together as a system.</div>
+        
+        <h2>Design</h2>
+        <div>This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <img id="loopTest" src="Images/LoopSelected.png" onclick="test_select()" onMouseOver="test_over()" onMouseOut="test_out()" />
+        <h3 class="h_text">Test</h3>
+        <div class="accordion" id="test">
+        <h2>QA</h2>
+        <div>Quality assurance (QA) is a way of preventing mistakes or defects in manufactured products and avoiding problems when delivering solutions or services to customers; which ISO 9000 defines as "part of quality management focused on providing confidence that quality requirements will be fulfilled".</div>
+        
+        <h2>Systemtest</h2>
+        <div>System testing of software or hardware is testing conducted on a complete, integrated system to evaluate the system's compliance with its specified requirements. System testing falls within the scope of black-box testing, and as such, should require no knowledge of the inner design of the code or logic.</div>
+        
+        <h2>Brugertest</h2>
+        <div>Usability testing is a technique used in user-centered interaction design to evaluate a product by testing it on users. This can be seen as an irreplaceable usability practice, since it gives direct input on how real users use the system.<br/><br/>
+        <button class="myBtn">Læs Mere</button></div>
+        <h2>Tilpasning</h2>
+        <div>This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here</div>
+        
+        <h2>Polish</h2>
+        <div>This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here</div>
+        
+        <h2>Lancering</h2>
+        <div>This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here</div>
+        
+        <h2>Design</h2>
+        <div>This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here. This is some text out here and some more text out here.. and more text out here</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <img id="loopDrift" src="Images/LoopSelected.png" onclick="drift_select()" onMouseOver="drift_over()" onMouseOut="drift_out()" />
+        <h3 class="h_text">Drift</h3>
+        <div class="accordion" id="drift">
+        <h2>Statistikker</h2>
+        <div>Statistics is the study of the collection, analysis, interpretation, presentation, and organization of data. In applying statistics to, e.g., a scientific, industrial, or social problem, it is conventional to begin with a statistical population or a statistical model process to be studied.</div>
+        
+        <h2>Service Desk</h2>
+        <div>A Service Desk is a primary IT service within the discipline of IT service management (ITSM) as defined by the Information Technology Infrastructure Library (ITIL).</div>
+        
+        <h2>SLA</h2>
+        <div>A service-level agreement (SLA) is a part of a standardized service contract where a service is formally defined. Particular aspects of the service – scope, quality, responsibilities – are agreed between the service provider and the service user.</div>
+        
+        <h2>Support</h2>
+        <div>Technical support (often shortened to tech support) refers to a plethora of services by which enterprises provide assistance to users of technology products such as mobile phones, televisions, computers, software products or other informatic, electronic or mechanical goods.</div>
+        
+        <h2>Community Management</h2>
+        <div>Community management or common-pool resource management is the management of a common resource or issue by a community through the collective action of volunteers and stakeholders. The resource managed can be either material or informational.</div>
+        
+        <h2>Marketing / Promotion</h2>
+        <div>Marketing is a widely used term to describe the communication between a company and the consumer audience that aims to increase the value of the company or its merchandise or, at its simplest, raises the profile of the company and its products in the public mind.</div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="ext.js"></script>
+
+</body>
+</html>

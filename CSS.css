@@ -1,0 +1,253 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+.h_text{
+	font-size:3vw;
+	text-align:center;
+	margin-bottom:0px;
+	margin-top:0px;
+	font-family:Arial, sans-serif;
+	font-weight:bold;
+}
+
+
+.container{
+	height: 400px;
+	width: 15%;
+	float:left;
+	align:center;	
+}
+
+.container img {
+	width:100%;
+	float:center;
+}
+
+
+.myBtn{
+	background-color:blue;
+	color:white;
+	float:right;
+}
+
+
+#imageBig {
+	width: 300px;
+	height: 300px;	
+	padding-bottom:50px;
+}
+.imagePreviews img{
+	width:31%;
+	height:100px;
+	float:center;	
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+	padding-bottom: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+	overflow-y:scroll;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* The modal window */
+.modal-header {
+    padding: 2px 2px;
+    background-color: #ED1C29;
+    color: white;
+	text-align:center;
+	font-size: 2vw;
+}
+
+.modal-body {
+	padding: 2px 16px;
+}
+
+nav{
+	line-height: 30px;
+	height:100%;
+	width: 30%;
+	float:left;
+	padding: 10px;
+
+}
+
+section{
+	width:40%;
+	height:100%;
+	float:left;
+	padding-left:10px;
+}
+
+aside{
+	width: 20%;
+	height:100%;
+	float:left;
+	padding-top:10px;
+	padding-left:50px;
+}
+
+.kontakt_navn{
+	font-size: 16px;
+	color: #666666;
+}
+
+.contact_header{
+	text-align:left;
+	padding-left:10px;
+	font-size:0.9em;
+	font-weight:bold;
+	margin-top:0.2rem;
+	margin-bottom:0.5rem;	
+}
+
+.contact_person{
+	line-height:20px;
+	margin-bottom:20px !important;
+	padding: 10px;
+}
+
+.contact_person_container{
+	box-shadow: 0 1px 2px 1px rgba(0,0,0,.1);
+	font-size: 0.9em;
+	background-color:white;
+	padding:10px;
+	width:240px;
+	height:270px;
+	font-family:proxima-nova;
+}
+
+.contact-thumbnail{
+	float:none;
+	text-align: center;
+}
+
+.contact-name{
+	font-family:adelle;
+	font-size:1em;
+	font-weight: bold;
+	padding-top: 10px;
+	overflow:hidden;
+	text-overflow:ellipsis;	
+}
+
+span .codedirection{
+	unicode-bidi: bidi-override;	
+}
+
+
+
+.ref-overall{
+	margin: 10px;
+	min-width: 240px;
+	width: 240px;
+	border-radius:5px;
+	background-color:rgba(240, 240, 240, 1);
+}
+
+.ref-container{
+	padding-left: 20px !important;
+	margin: 0 0 30px !important;
+	display: table !important;
+}
+
+.ref-container div{
+	height: 100px;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+	line-height: 80px;	
+}
+
+.ref-container img{
+	max-width:115px;
+	max-height:80px;
+	display: block;
+	vertical-align: middle;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.eksempel_info{
+	margin: 10px;
+	min-width:240px;
+	width:240px;
+	border-radius: 5px;
+	background-color: rgba(240,240,240,1);
+}
+
+.floatleft{
+	float:left !important;
+}
+
+#eksempel_billeder{
+	float:center;
+		
+}
+
